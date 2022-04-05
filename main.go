@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"github.com/joho/godotenv"
+	"placementCracker_api/Controllers"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	godotenv.Load()
+	Controllers.Start()
+
 }
