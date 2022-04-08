@@ -11,3 +11,4 @@ type Jobs struct {
 	Image []byte
 	Link  string
 }
+
