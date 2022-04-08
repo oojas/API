@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/joho/godotenv"
-	"placementCracker_api/Controllers"
+	"placementCracker_api/Routers"
 )
 
 func main() {
 	godotenv.Load()
-	Controllers.Start()
+	Routers.Start()
 
 }

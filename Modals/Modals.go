@@ -8,7 +8,7 @@ type Courses struct {
 
 type Jobs struct {
 	Name  string
+	Role  string
 	Image []byte
 	Link  string
 }
-
