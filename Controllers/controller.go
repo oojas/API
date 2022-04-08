@@ -8,14 +8,12 @@ import (
 
 func GetCourses(w http.ResponseWriter, r *http.Request) {
 	courses := Database.GetDataCourses()
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusCreated)
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(courses)
 
 }
 func GetJobs(w http.ResponseWriter, r *http.Request) {
 	jobs := Database.GetDataJobs()
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusCreated)
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(jobs)
 }
