@@ -7,8 +7,8 @@ type Courses struct {
 }
 
 type Jobs struct {
-	Name  string
-	Role  string
-	Image []byte
-	Link  string
+	Name  string `json:"name"`
+	Role  string `json:"role"`
+	Image []byte `json:"image"`
+	Link  string `json:"link"`
 }
