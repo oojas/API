@@ -12,3 +12,8 @@ type Jobs struct {
 	Image []byte `json:"image"`
 	Link  string `json:"link"`
 }
+type Articles struct {
+	Description string `json:"description"`
+	Image       []byte `json:"image"`
+	Link        string `json:"link"`
+}

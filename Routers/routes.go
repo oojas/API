@@ -22,5 +22,7 @@ func Start() {
 	router.HandleFunc("/courses", Controllers.GetCourses).Methods(http.MethodGet)
 	// for jobs
 	router.HandleFunc("/jobs", Controllers.GetJobs).Methods(http.MethodGet)
+	// for articles
+	router.HandleFunc("/articles", Controllers.GetArticles).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }
