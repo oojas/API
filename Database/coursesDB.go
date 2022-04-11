@@ -23,6 +23,7 @@ func GetDataJobs() []Modals.Jobs {
 		{"Tata Steel", "Engineer Trainee", imageProcessing.ImageToBase64("images/tata.png"), "https://alljobsinindia.in/tata-steel-recruitment-2022/"},
 		{"Eloelo", "Android developer", imageProcessing.ImageToBase64("images/eloelo.jpg"), "https://tinyurl.com/5xe32nke"},
 		{"Tata Communications", "Software Engineer", imageProcessing.ImageToBase64("images/tata-comm.jpg"), "https://alljobsinindia.in/tata-communications-recruitment/"},
+		{"OYO", "Mobility Manager", imageProcessing.ImageToBase64("images/oyo.jpg"), "https://bit.ly/3600XV0"},
 	}
 	return jobs
 }
