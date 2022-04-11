@@ -12,6 +12,9 @@ func GetDataArticles() []Modals.Articles {
 		{"Clean Architecture + MVVM", imageProcessing.ImageToBase64("images/art3.png"), "https://medium.com/@hemanthappu006/clean-architecture-mvvm-9f3c495c154c"},
 		{"Making $300 Per Month With A Telegram Bot?", imageProcessing.ImageToBase64("images/art4.jpg"), "https://medium.com/@amir-tech/making-300-per-month-with-a-telegram-bot-1556c41903ee"},
 		{"I Will Reject Your Resume If I See These 4 Things", imageProcessing.ImageToBase64("images/art5.jpeg"), "https://medium.com/startup-stash/i-will-reject-your-resume-if-i-see-these-4-things-4da5b59453c8"},
+		{"WEB 3.0", imageProcessing.ImageToBase64("images/art6.jpg"), "https://medium.com/@vijay.viru146/web-3-0-a4def4f4328f"},
+		{"How I built my tech startup as a solo developer", imageProcessing.ImageToBase64("images/art7.png"), "https://medium.com/dreamwod-tech/how-i-built-my-tech-startup-as-a-solo-developer-45390f460002"},
+		{"How I got a FAANG offer without grinding Leetcode", imageProcessing.ImageToBase64("images/art8.png"), "https://medium.com/@contrapasso/how-i-got-faang-offers-without-grinding-leetcode-7e556243e9ce"},
 	}
 	return articles
 }
