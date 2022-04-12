@@ -18,7 +18,8 @@ type Articles struct {
 	Link        string `json:"link"`
 }
 type Programs struct {
-	Name  string `json:"name"`
-	Image []byte `json:"image"`
-	Link  string `json:"link"`
+	Name        string `json:"name"`
+	Image       []byte `json:"image"`
+	Link        string `json:"link"`
+	Description string `json:"description"`
 }
