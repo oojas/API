@@ -1,9 +1,9 @@
 package Modals
 
 type Courses struct {
-	Name  string
-	Image []byte
-	Link  string
+	Name  string `json:"name"`
+	Image []byte `json:"image"`
+	Link  string `json:"link"`
 }
 
 type Jobs struct {
@@ -16,4 +16,9 @@ type Articles struct {
 	Description string `json:"description"`
 	Image       []byte `json:"image"`
 	Link        string `json:"link"`
+}
+type Programs struct {
+	Name  string `json:"name"`
+	Image []byte `json:"image"`
+	Link  string `json:"link"`
 }

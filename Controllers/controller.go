@@ -22,3 +22,8 @@ func GetArticles(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(articles)
 }
+func GetProgram(w http.ResponseWriter, r *http.Request) {
+	programs := Database.GetDataPrograms()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(programs)
+}
