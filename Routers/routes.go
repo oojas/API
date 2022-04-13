@@ -26,5 +26,7 @@ func Start() {
 	router.HandleFunc("/articles", Controllers.GetArticles).Methods(http.MethodGet)
 	// For Campus Ambassador programs
 	router.HandleFunc("/programs", Controllers.GetProgram).Methods(http.MethodGet)
+	// For DSA Channels
+	router.HandleFunc("/dsaChannels", Controllers.GetDSAChannels).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }
