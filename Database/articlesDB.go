@@ -7,7 +7,7 @@ import (
 
 func GetDataArticles() []Modals.Articles {
 	articles := []Modals.Articles{
-		{"Flutter packages which I use in every project.", imageProcessing.ImageToBase64("images/art1.jpeg"), "https://medium.com/@dawletataoglu/flutter-packages-which-i-use-in-every-project-d8bf14c43622"},
+		{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia. Quo neque error repudiandae fuga?", imageProcessing.ImageToBase64("images/art1.jpeg"), "https://medium.com/@dawletataoglu/flutter-packages-which-i-use-in-every-project-d8bf14c43622"},
 		{"Http Server Performance: NodeJS vs. Go", imageProcessing.ImageToBase64("images/art2.jpg"), "https://medium.com/better-programming/http-server-performance-nodejs-vs-go-397751e8d275"},
 		{"Clean Architecture + MVVM", imageProcessing.ImageToBase64("images/art3.png"), "https://medium.com/@hemanthappu006/clean-architecture-mvvm-9f3c495c154c"},
 		{"Making $300 Per Month With A Telegram Bot?", imageProcessing.ImageToBase64("images/art4.jpg"), "https://medium.com/@amir-tech/making-300-per-month-with-a-telegram-bot-1556c41903ee"},
