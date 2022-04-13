@@ -28,5 +28,7 @@ func Start() {
 	router.HandleFunc("/programs", Controllers.GetProgram).Methods(http.MethodGet)
 	// For DSA Channels
 	router.HandleFunc("/dsaChannels", Controllers.GetDSAChannels).Methods(http.MethodGet)
+	// For RoadMaps
+	router.HandleFunc("/roadMaps", Controllers.GetRoadMapChannel).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

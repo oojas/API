@@ -33,3 +33,8 @@ func GetDSAChannels(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(channels)
 }
+func GetRoadMapChannel(w http.ResponseWriter, r *http.Request) {
+	maps := youtubeChannels.GetRoadMaps()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(maps)
+}
