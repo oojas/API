@@ -30,5 +30,7 @@ func Start() {
 	router.HandleFunc("/dsaChannels", Controllers.GetDSAChannels).Methods(http.MethodGet)
 	// For RoadMaps
 	router.HandleFunc("/roadMaps", Controllers.GetRoadMapChannel).Methods(http.MethodGet)
+	// for free youtube channels offering courses
+	router.HandleFunc("/freeCourses", Controllers.GetFreeCourseChannels).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

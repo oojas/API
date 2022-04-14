@@ -38,3 +38,8 @@ func GetRoadMapChannel(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(maps)
 }
+func GetFreeCourseChannels(w http.ResponseWriter, r *http.Request) {
+	courses := youtubeChannels.GetFreeCourse()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(courses)
+}
