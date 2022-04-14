@@ -18,8 +18,6 @@ func getPort() string {
 func Start() {
 	p := getPort()
 	router := mux.NewRouter()
-	// for courses
-	router.HandleFunc("/courses", Controllers.GetCourses).Methods(http.MethodGet)
 	// for jobs
 	router.HandleFunc("/jobs", Controllers.GetJobs).Methods(http.MethodGet)
 	// for articles
@@ -32,5 +30,7 @@ func Start() {
 	router.HandleFunc("/roadMaps", Controllers.GetRoadMapChannel).Methods(http.MethodGet)
 	// for free youtube channels offering courses
 	router.HandleFunc("/freeCourses", Controllers.GetFreeCourseChannels).Methods(http.MethodGet)
+	// for computer subjects
+	router.HandleFunc("/subjects", Controllers.GetComputerSubjects).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

@@ -7,12 +7,6 @@ import (
 	"placementCracker_api/Database/youtubeChannels"
 )
 
-func GetCourses(w http.ResponseWriter, r *http.Request) {
-	courses := Database.GetDataCourses()
-	w.Header().Add("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(courses)
-
-}
 func GetJobs(w http.ResponseWriter, r *http.Request) {
 	jobs := Database.GetDataJobs()
 	w.Header().Add("Content-Type", "application/json")
@@ -42,4 +36,9 @@ func GetFreeCourseChannels(w http.ResponseWriter, r *http.Request) {
 	courses := youtubeChannels.GetFreeCourse()
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(courses)
+}
+func GetComputerSubjects(w http.ResponseWriter, r *http.Request) {
+	subjects := youtubeChannels.GetSubjectChannels()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(subjects)
 }
