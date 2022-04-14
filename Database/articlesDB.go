@@ -7,6 +7,7 @@ import (
 
 func GetDataArticles() []Modals.Articles {
 	articles := []Modals.Articles{
+		{"Perspectives in Leadership: The data engineering leaders need to prioritize", imageProcessing.ImageToBase64("images/art9.png"), "https://www.pluralsight.com/blog/software-development/pil-data-engineering-leaders-must-prioritize"},
 		{"Flutter packages which I use in every project.", imageProcessing.ImageToBase64("images/art1.jpeg"), "https://medium.com/@dawletataoglu/flutter-packages-which-i-use-in-every-project-d8bf14c43622"},
 		{"Http Server Performance: NodeJS vs. Go", imageProcessing.ImageToBase64("images/art2.jpg"), "https://medium.com/better-programming/http-server-performance-nodejs-vs-go-397751e8d275"},
 		{"Clean Architecture + MVVM", imageProcessing.ImageToBase64("images/art3.png"), "https://medium.com/@hemanthappu006/clean-architecture-mvvm-9f3c495c154c"},
