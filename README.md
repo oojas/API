@@ -28,3 +28,5 @@ http://localhost:3000/(your endpoint)
 ```
 go run main.go
 ```
+## Tech Stack used to build the app
+- Flutter, Golang, SQL, Firebase
