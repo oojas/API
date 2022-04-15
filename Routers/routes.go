@@ -32,5 +32,7 @@ func Start() {
 	router.HandleFunc("/freeCourses", Controllers.GetFreeCourseChannels).Methods(http.MethodGet)
 	// for computer subjects
 	router.HandleFunc("/subjects", Controllers.GetComputerSubjects).Methods(http.MethodGet)
+	// for web app development
+	router.HandleFunc("/webdev", Controllers.GetWebDev).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

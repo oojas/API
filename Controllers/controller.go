@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"placementCracker_api/Database"
+	"placementCracker_api/Database/Courses"
 	"placementCracker_api/Database/youtubeChannels"
 )
 
@@ -41,4 +42,9 @@ func GetComputerSubjects(w http.ResponseWriter, r *http.Request) {
 	subjects := youtubeChannels.GetSubjectChannels()
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(subjects)
+}
+func GetWebDev(w http.ResponseWriter, r *http.Request) {
+	web := Courses.GetWebAppData()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(web)
 }
