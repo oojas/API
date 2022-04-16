@@ -34,5 +34,7 @@ func Start() {
 	router.HandleFunc("/subjects", Controllers.GetComputerSubjects).Methods(http.MethodGet)
 	// for web app development
 	router.HandleFunc("/webdev", Controllers.GetWebDev).Methods(http.MethodGet)
+	// For cyber security
+	router.HandleFunc("/cybersecurity", Controllers.GetCyber).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

@@ -48,3 +48,8 @@ func GetWebDev(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(web)
 }
+func GetCyber(w http.ResponseWriter, r *http.Request) {
+	cyber := Courses.GetCyberSecurityData()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(cyber)
+}
