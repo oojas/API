@@ -36,5 +36,7 @@ func Start() {
 	router.HandleFunc("/webdev", Controllers.GetWebDev).Methods(http.MethodGet)
 	// For cyber security
 	router.HandleFunc("/cybersecurity", Controllers.GetCyber).Methods(http.MethodGet)
+	// For machine learning
+	router.HandleFunc("/machinelearning", Controllers.GetMachineLearning).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

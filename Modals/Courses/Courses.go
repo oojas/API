@@ -14,3 +14,10 @@ type CyberSecurity struct {
 	Description string `json:"description"`
 	Link        string `json:"link"`
 }
+type MachineLearning struct {
+	CoursePic   []byte `json:"course_pic"`
+	Thumbnail   []byte `json:"thumbnail"`
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Link        string `json:"link"`
+}

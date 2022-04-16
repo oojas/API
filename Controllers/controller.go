@@ -53,3 +53,8 @@ func GetCyber(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(cyber)
 }
+func GetMachineLearning(w http.ResponseWriter, r *http.Request) {
+	machine := Courses.GetMachineLearningData()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(machine)
+}
