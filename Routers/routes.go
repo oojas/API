@@ -42,5 +42,7 @@ func Start() {
 	router.HandleFunc("/cloud", Controllers.GetCloudComputing).Methods(http.MethodGet) //
 	// For Big Data
 	router.HandleFunc("/bigdata", Controllers.GetBigData).Methods(http.MethodGet)
+	// For Devops
+	router.HandleFunc("/devops", Controllers.GetDevops).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }

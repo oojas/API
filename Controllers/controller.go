@@ -68,3 +68,8 @@ func GetBigData(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
 }
+func GetDevops(w http.ResponseWriter, r *http.Request) {
+	dev := Courses.GetDevopsData()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(dev)
+}
