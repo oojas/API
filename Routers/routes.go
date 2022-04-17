@@ -39,6 +39,8 @@ func Start() {
 	// For machine learning
 	router.HandleFunc("/machinelearning", Controllers.GetMachineLearning).Methods(http.MethodGet)
 	// For cloud computing
-	router.HandleFunc("/cloud", Controllers.GetCloudComputing).Methods(http.MethodGet)
+	router.HandleFunc("/cloud", Controllers.GetCloudComputing).Methods(http.MethodGet) //
+	// For Big Data
+	router.HandleFunc("/bigdata", Controllers.GetBigData).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(p, router))
 }
