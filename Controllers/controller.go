@@ -58,3 +58,8 @@ func GetMachineLearning(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(machine)
 }
+func GetCloudComputing(w http.ResponseWriter, r *http.Request) {
+	cloud := Courses.GetCloudComputingData()
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(cloud)
+}
