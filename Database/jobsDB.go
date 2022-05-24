@@ -7,6 +7,7 @@ import (
 
 func GetDataJobs() []Modals.Jobs {
 	jobs := []Modals.Jobs{
+		{"Google", "Software Engineer", imageProcessing.ImageToBase64("images/google.jpg"), "https://alljobsinindia.in/google-is-hiring-software-engineer/"},
 		{"Oppo", "Account Executive", imageProcessing.ImageToBase64("images/oppo.png"), "https://alljobsinindia.in/oppo-off-campus-drive-2022/"},
 		{"IBM", "Associate System Engineer", imageProcessing.ImageToBase64("images/ibm.png"), "https://bit.ly/3v769Py"},
 		{"Genesys", "Associate Software Engineer", imageProcessing.ImageToBase64("images/genesys.jpg"), "https://jobforfresher.in/genesys-recruitment-2022/"},
