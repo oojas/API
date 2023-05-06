@@ -1,11 +1,13 @@
 package Routers
 
 import (
-	"github.com/gorilla/mux"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"placementCracker_api/Controllers"
+
+	"github.com/gorilla/mux"
 )
 
 func getPort() string {
@@ -44,5 +46,6 @@ func Start() {
 	router.HandleFunc("/bigdata", Controllers.GetBigData).Methods(http.MethodGet)
 	// For Devops
 	router.HandleFunc("/devops", Controllers.GetDevops).Methods(http.MethodGet)
+	fmt.Println("Hi I am Ojas")
 	log.Fatal(http.ListenAndServe(p, router))
 }
